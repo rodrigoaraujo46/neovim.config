@@ -48,7 +48,6 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
@@ -90,6 +89,8 @@ return {
         })
 
         vim.diagnostic.config({
+            virtual_text = true,   -- Enable inline diagnostics
+            signs = true,          -- Enable gutter icons
             -- update_in_insert = true,
             float = {
                 focusable = false,
