@@ -41,7 +41,7 @@ return {
                 -- your configuration comes here
                 -- or leave it empty to use the default settings
                 style = "night",        -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-                transparent = true,    -- Enable this to disable setting the background color
+                transparent = true,     -- Enable this to disable setting the background color
                 terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
                 styles = {
                     -- Style to be applied to different syntax groups
@@ -55,10 +55,40 @@ return {
                 on_colors = function(colors)
                     colors.bg_statusline = "NONE"
                 end,
+                on_highlights = function(hl)
+                    hl.TelescopeNormal = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                    hl.TelescopeBorder = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                    hl.TelescopePromptNormal = {
+                        bg = "none",
+                    }
+                    hl.TelescopePromptBorder = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                    hl.TelescopePromptTitle = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                    hl.TelescopePreviewTitle = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                    hl.TelescopeResultsTitle = {
+                        bg = "none",
+                        fg = "none",
+                    }
+                end
             })
             ColorMyPencils("tokyonight")
         end
-    }, {
+    },
+    {
         "rose-pine/neovim",
         name = "rose-pine",
         config = function()
