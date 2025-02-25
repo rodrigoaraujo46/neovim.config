@@ -27,16 +27,11 @@ return {
                     lualine_c = {},
                     lualine_x = {},
                     lualine_y = {},
-                    lualine_z = { 'location'},
+                    lualine_z = { 'location' },
                 },
                 tabline = {},
                 extensions = {},
             }
         end
-    },
-    {
-        "christopher-francisco/tmux-status.nvim",
-        lazy = true,
-        opts = {},
     },
 }
