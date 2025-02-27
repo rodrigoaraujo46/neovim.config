@@ -37,7 +37,9 @@ return {
                 },
                 -- add any config here
             })
+            require("notify").setup({
+                timeout = 100,
+            })
         end,
-
     }
 }
