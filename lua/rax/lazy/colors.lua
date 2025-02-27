@@ -52,9 +52,6 @@ return {
                     sidebars = "dark", -- style for sidebars, see below
                     floats = "dark",   -- style for floating windows
                 },
-                on_colors = function(colors)
-                    colors.bg_statusline = "NONE"
-                end,
                 on_highlights = function(hl)
                     hl.TelescopeNormal = {
                         bg = "none",
